@@ -38,12 +38,14 @@ This project passes all required tests from freeCodeCamp.
     { "error": "Invalid Date" }
     ```
 
-### Examples
+### Live Demo & Examples
 
-- `http://localhost:3000/api/2015-12-25`
-- `http://localhost:3000/api/1451001600000`
-- `http://localhost:3000/api/`
-- `http://localhost:3000/api/invalid-date`
+[View Live Demo](https://timestamp-microservice.coding.g2k.media/)
+
+- `https://timestamp-microservice.coding.g2k.media/api/2015-12-25`
+- `https://timestamp-microservice.coding.g2k.media/api/1451001600000`
+- `https://timestamp-microservice.coding.g2k.media/api/`
+- `https://timestamp-microservice.coding.g2k.media/api/invalid-date`
 
 ## Getting Started
 
