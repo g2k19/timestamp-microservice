@@ -33,7 +33,7 @@ app.get("/api/:date?", (req, res) => {
 
   // If no input provided, output the current time
   if (input === undefined) {
-    res.json({
+    return res.json({
       unix: Date.now(),
       utc: new Date().toUTCString()
     });
@@ -46,9 +46,9 @@ app.get("/api/:date?", (req, res) => {
     }
 
   if (isNaN(inputToDate.getTime())) {
-    res.json({ error: "Invalid Date" });
+    return res.json({ error: "Invalid Date" });
   } else {
-    res.json({
+    return res.json({
       unix: inputToDate.getTime(),
       utc: inputToDate.toUTCString()
     });
